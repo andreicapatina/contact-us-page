@@ -1,95 +1,145 @@
+/* Alinierea elementelor*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#entire-form {
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 5px;
+}
+
+#container-with-2semi-containers {
+    display: flex;
+    flex-direction: row;
+}
+
+.semi-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#fname, #lname, #email, #phone {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#country, #address, #subject {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+#submit-button {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+/* Stilizarea elementelor (culorile) */
+
 body {
     background-color: #c5a8e0;
-    display: flex;
-    justify-content: center; /* Center aligns content horizontally */
-    align-items: center; /* Center aligns content vertically */
-    height: 100vh; /* Ensures full viewport height */
-    font-family: sans-serif; /* Use a sans-serif font for consistency */
-}
-
-main {
-    padding: 20px;
-    max-width: 1200px; /* Adjust as needed */
-    width: 100%; /* Ensures responsiveness */
-    background-color: #ffffff; /* White background for the form */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-#entireForm {
-    display: flex;
-    flex-direction: column; /* Arrange form items vertically */
-    align-items: center; /* Center aligns items horizontally */
-    gap: 15px; /* Adds spacing between form elements */
-    padding: 20px; /* Padding around the form */
-}
-
-#containerulCuDouaSemiContainere {
-    display: flex;
-    justify-content: space-between; /* Space between the semi-containers */
-    width: 100%; /* Ensures they take full width */
-}
-
-.semiContainer {
-    display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    gap: 10px; /* Spacing between input fields */
-}
-
-label {
-    font-weight: bold; /* Make labels bold */
-    color: #555; /* Grayish color */
-}
-
-input, textarea, select {
-    padding: 10px; /* Padding for input fields */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Consistent font size */
-    width: 100%; /* Full width for all input fields */
-    box-sizing: border-box; /* Include padding and border in width calculation */
-}
-
-textarea {
-    resize: vertical; /* Allow only vertical resizing */
-}
-
-select {
-    appearance: none; /* Customize the dropdown arrow */
-    padding-right: 30px; /* Add space for the arrow */
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><path fill='%23000000' d='M4 7.828l6.364 6.364c.12.12.322.12.442 0l6.364-6.364c.12-.12.12-.322 0-.442L12 3.414 5.636.05c-.12-.12-.322-.12-.442 0L.05 3.414 7.828 11.828c.12.12.322.12.442 0z'/></svg>") no-repeat right 10px center;
-}
-
-#button button {
-    background-color: #555; /* Dark gray background for the button */
-    color: white; /* White text */
-    padding: 12px 20px; /* Padding for the button */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 18px; /* Larger font size for the button */
-    cursor: pointer; /* Cursor changes to pointer on hover */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-}
-
-#button button:hover {
-    background-color: #333; /* Darker gray on hover */
 }
 
 h1 {
-    color: #555; /* Dark gray color for the heading */
-    text-align: center;
-    margin-bottom: 20px; /* Spacing below the heading */
+    color: white;
 }
 
-#country, #address {
-    width: 100%;
-  }
-  
-#country select, #address input {
-    width: 100%;
-    box-sizing: border-box;
+#entire-form {
+    background-color: white;
 }
 
-#subject {
+#entire-form input{
+    background-color: #c59fe8;
+    border: none;
+    border-radius: 3px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: white; /* Change this to your desired color */
+}
+
+#country select, 
+#address input {
+    background-color: #a25ce0;
+    border:none;
+    border-radius: 3px;
+    color: white;
+}
+
+#subject textarea{
+    background-color: #8531d1;
+    border:none;
+    border-radius: 3px;
+    color: white;
+    resize: none;
+}
+
+#submit-button button {
+    background-color: #410179;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    height: 40px;
+    font-weight: bold;
+}
+
+#submit-button button:hover {
+    background-color: #8531d1;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
     width: 100%;
 }
+
+.dropdown-button {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    background-color: #9d5de5;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #f1f1f1;
+}
+
+.flag {
+    margin-right: 10px;
+}
+
