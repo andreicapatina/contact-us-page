@@ -37,7 +37,7 @@ O metodă ar fi utilizarea stilizării blocurilor `<div>`, însă am folosit Jav
 ![screenshot](./images/preview1.png)
 
 
-#### Interesting thing with using flag library in <select> <obtion> tags
+#### Interesting thing with using flag library in "<select>" "<obtion>" tags
 
 ![screenshot-with-test](./images/photo-with-test.png)
 
