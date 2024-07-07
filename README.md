@@ -1,4 +1,5 @@
-# Solutia nr1 cu emoji: https://github.com/andreicapatina/contact-us-page/tree/solution-with-emoji
+# Solutia nr1 cu emoji: 
+https://github.com/andreicapatina/contact-us-page/tree/solution-with-emoji
 
 ```HTML
     <select name="country" id="country">
@@ -14,7 +15,8 @@
 ```
 
 
-# Solutia nr2 cu div: https://github.com/andreicapatina/contact-us-page/tree/dropdown-with-div
+# Solutia nr2 cu div: 
+https://github.com/andreicapatina/contact-us-page/tree/dropdown-with-div
 
 >Hint: s-ar putea că dropdown-ul să trebuiască să fie reconstruit într-un alt mod decât cel clasic.
 
